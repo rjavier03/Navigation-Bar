@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+html, body {
+    /* overflow-x: hidden; */
+    width: 100%;
+}
+
+
+body{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    /* padding-right: 15px;
+    padding-left: 15px; */
+    margin-right: auto;
+    margin-left: auto;
+    /* height: 50px; */
+}
+       
+/* navbar */
+
+/* .navbar {
+    overflow: hidden;
+
+} */
+.header-wrapper {
+    display: flex;
+    flex-direction: row;
+    padding:30px;
+}
+
+.header-logo {
+    width: 18%;
+}
+
+.header-navigation {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 50px;
+    position: relative;
+}
+.header-navigation a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform:uppercase
+}
+
+.header-navigation a:hover {
+    text-decoration: underline;
+    text-decoration-color: #04c5fe;
+    text-decoration-thickness: 5px;
+
+}
+.header-navigation a:active {
+    text-decoration: underline;
+    text-decoration-color: #04c5fe;
+    text-decoration-thickness: 5px;
+}
+.dropdown-content a {
+    padding: 10px;
+}
+/* .dropdown{
+    position:relative;
+} */
+.drop-down-link {
+    display: flex;
+    padding: 50px;
+    flex-direction: column;
+}
+.drop-down-link a {
+    border-bottom: solid 1px #C8C8C8;
+    width: 300px;
+}
+.dropdown-content {
+    padding:10px;
+    display: none;
+    /* flex-direction: row; */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 800px;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+    z-index: 1;
+    right:0;
+}
+.with-dropdown:after {
+    content: '▼';
+    font-size: 12px;
+}
+.with-dropdown:hover + .dropdown-content , .dropdown-content:hover  {
+    display: flex;
+    flex-direction: row;
+}
+i.burger-icon:after {
+    content: '☰';
+    font-size:20px
+}
+.icon{
+    display: none;
+}
+
+/* hero section */
+
+.hero-section {
+    max-width: 1440px;
+    background-image: url(https://www.ironpaper.com/hubfs/header-john-strategy.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    background-size: cover;
+    margin-right: auto;
+    margin-left:auto;
+
+}
+
+.hero-section h1 {
+    font-size: 72px;
+    line-height: 120%;
+    font-family: "ivypresto-display";
+    color: white;
+    font-weight: 600;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  padding-left: 10%;
+}
+
+.hero-section h1 > span {
+    color: #04c5fe;
+}
+
+
+.form-content {
+    max-width: 1140px;
+    display: flex;
+    flex-direction: row;
+}
+
+.form-text {
+    width: 50%;
+}
+
+.main-form {
+    width: 50%;
+}
+@media screen and (max-width: 800px) {
+    .icon {
+        float: right;
+        display: block;
+        position: absolute;
+        right: 0;
+        margin-right: 50px;
+    }
+    .header-navigation{
+        display: none;
+    }
+    .header-logo {
+        width: 30%;
+        }
+    .dropdown-content{
+        position:relative;
+        min-width: unset;
+        box-shadow: unset;
+    }
+    }
+ 
+    .header-navigation.mobile-view {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+        right: 0;
+        /* background: #141111; */
+        padding: 20px;
+        margin-top: 30px;
+       box-shadow: 0px 8px 9px -3px rgba(0,0,0,0.65);
+-webkit-box-shadow: 0px 8px 9px -3px rgba(0,0,0,0.65);
+-moz-box-shadow: 0px 8px 9px -3px rgba(0,0,0,0.65);
+    }   
+    .header-navigation.mobile-view a,.dropdown{
+        color:rgb(0, 0, 0);
+        padding: 10px;
+    }
+    .drop-down-text-container h2 {
+        font-size: 50px;
+        padding: 90px 30px 40px;
+        text-align: left;
+        text-decoration: none;
+        /* margin-top: 20px; */
+    }
+    
+    .drop-down-text-container {
+        /* background: #00DC75; */
+    }
+    
+    .drop-down-text {
+        background: #00DC75;
+        margin: 50px;
+        width: 50%;
+    }
